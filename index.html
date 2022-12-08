@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de cadadastro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="box">
+        <form id="form">
+            <fieldset>
+                <legend>
+                    <b>Formulário de Dados de Utilizador</b>
+                </legend>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" name="nome" id="inputuser" class="inputuser" oninput="Utilizador()" required>
+                    <label for="nome" class="labelinput">Ultilizador</label>
+                    <span class="span" >utilizador tem que ter pelo menos 4 caracteres.</span>
+                </div>
+
+
+                <br><br>
+
+
+                <div class="inputbox">
+                    <input type="text" name="email" id="inputuser" class="inputuser" required  oninput="emailValidade()">
+                    <label for="email" class="labelinput">E-mail</label>
+                    <span class="span" >E-mail introduzido não é válido.</span>
+                </div>
+
+
+                <br><br>
+
+
+                <div class="inputbox"> 
+                    <input type="password" name="palavra-passe" id="inputuser" class="inputuser" required  oninput="minPass()">
+                    <label for="palavra-passe" class="labelinput">Palavra-passe</label>
+                    <span class="span" >Palavra-passe introduzida tem entre 6 e 12 caracteres.</span>
+                <div>  
+                    
+                    
+                <br><br>
+
+
+                <div class="inputbox">
+                    <input type="password" name="senha" id="inputuser" class="inputuser" required oninput="igualPass()">
+                    <label for="senha" class="labelinput">Repetir palavra-passe</label>
+                    <span class="span" >palavra-passe não compativel</span>
+                </div>
+                
+
+                <br><br>
+
+
+                <input type="submit" name="submit" id="submit">
+                
+                    
+            </fieldset>
+        </form>
+         
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
